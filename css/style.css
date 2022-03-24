@@ -14,11 +14,14 @@ body,
 html {
   padding: 0;
   margin: 0;
+  background-color: var(--colour-pampas-offwhite);
 }
 
 :root {
   --colour-pampas-offwhite: #f2efea;
   --colour-nightRider-black: #0d0906;
+  --colour-nutmeg-brownred: #732c26;
+  --colour-tapa-grey: #73726e;
   --font-primary-Signika-Negative: "Signika Negative", sans-serif;
   --font-secondary-Lora: "Lora", serif;
   /* --font-accent-:s; */ /* the font for the price and stock...*/
@@ -46,5 +49,45 @@ h3 {
 h2 {
   font-family: var(--font-secondary-Lora);
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
+  font-size: 1rem;
+}
+
+/* LOGO STYLING*/
+.logo {
+  background-color: var(--colour-nightRider-black);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  display: inline-block;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* CARD STYLING */
+.specs span {
+  font-family: var(--font-accent-);
+}
+
+/* NAVIGATION STYLING */
+nav ul li {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 1rem;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  color: var(--colour-tapa-grey);
+  padding-left: 0;
+}
+nav > ul > li:after {
+  content: "/";
+  margin: 0.5rem;
+}
+nav > ul > li:nth-of-type(1):after,
+nav > ul > li:nth-of-type(5):after {
+  content: "";
+}
+nav a {
+  color: var(--colour-nutmeg-brownred);
 }
