@@ -23,3 +23,28 @@ html {
   --font-secondary-Lora: "Lora", serif;
   /* --font-accent-:s; */ /* the font for the price and stock...*/
 }
+
+#wrapper {
+  margin: 1.5rem;
+}
+
+/* PRIMARY FONT STYLING */
+h1,
+h3,
+.specs li {
+  font-family: var(--font-primary-Signika-Negative);
+  letter-spacing: 0.1rem;
+}
+
+h1,
+h3 {
+  text-transform: uppercase;
+}
+
+/* SECONDARY FONT STYLING */
+
+h2 {
+  font-family: var(--font-secondary-Lora);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
