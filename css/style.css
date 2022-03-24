@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --colour-pampas-offwhite: #f2efea;
+  --colour-nightRider-black: #0d0906;
+  --font-primary-Signika-Negative: "Signika Negative", sans-serif;
+  --font-secondary-Lora: "Lora", serif;
+  /* --font-accent-:s; */ /* the font for the price and stock...*/
+}
