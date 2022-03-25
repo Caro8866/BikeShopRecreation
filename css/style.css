@@ -22,13 +22,16 @@ html {
   --colour-nightRider-black: #0d0906;
   --colour-nutmeg-brownred: #732c26;
   --colour-tapa-grey: #73726e;
+  --colour-silver-grey: #cccccc;
   --font-primary-Signika-Negative: "Signika Negative", sans-serif;
   --font-secondary-Lora: "Lora", serif;
   /* --font-accent-:s; */ /* the font for the price and stock...*/
 }
 
 #wrapper {
-  margin: 1.5rem;
+  padding: 1.5rem;
+  width: clamp(300px, 150ch, 90%);
+  margin: auto;
 }
 
 /* PRIMARY FONT STYLING */
@@ -37,6 +40,7 @@ h3,
 .specs li {
   font-family: var(--font-primary-Signika-Negative);
   letter-spacing: 0.1rem;
+  color: var(--colour-tapa-grey);
 }
 
 h1,
@@ -66,6 +70,7 @@ h2 {
 /* CARD STYLING */
 .specs span {
   font-family: var(--font-accent-);
+  color: var(--colour-nightRider-black);
 }
 
 /* NAVIGATION STYLING */
@@ -90,4 +95,86 @@ nav > ul > li:nth-of-type(5):after {
 }
 nav a {
   color: var(--colour-nutmeg-brownred);
+}
+/* CARD SECTION STYLING */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 6rem 3rem;
+  padding-top: 1rem;
+}
+/* CARD STYLING */
+.bikeCard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+.bikeCard img {
+  margin-bottom: 1rem;
+}
+.brandName,
+.productName {
+  margin: 0;
+}
+.brandName {
+  font-size: 0.7rem;
+}
+.productName {
+  border-bottom: var(--colour-silver-grey) 1px solid;
+  margin-bottom: 0.3rem;
+}
+
+.specs {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.bikeCard ul {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1rem;
+}
+
+.bikeCard li {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  width: 100%;
+  border-bottom: 1px solid var(--colour-silver-grey);
+}
+.bikeCard li:nth-last-child(1) {
+  border-bottom: none;
+  margin: auto;
+}
+
+.specs > * {
+  border: 1px solid var(--colour-silver-grey);
+}
+
+.specs span {
+  font-size: 1rem;
+}
+
+.specsButton {
+  border: var(--colour-nutmeg-brownred) 1px solid;
+  color: var(--colour-nutmeg-brownred);
+  font-style: normal;
+  font-weight: 1;
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+  padding: 0.2rem;
+  background-color: inherit;
+  font-family: var(--font-primary-Signika-Negative);
+  display: block;
+  margin: auto;
+}
+
+/* COLOURS */
+.colours {
+  content: "";
 }
