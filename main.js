@@ -46,11 +46,13 @@ function showProduct(product) {
   // CHANE CONTENT
   copy.querySelector(".productName").textContent = product.title.rendered;
   copy.querySelector(".price").textContent = `$${product.price}`;
-  if (product.price2 == true) {
+
+  if (product.price2 > 1) {
     copy.querySelector(
       ".price"
     ).textContent = `$${product.price} - $${product.price2}`;
   }
+
   copy.querySelector(".brandName").textContent =
     product._embedded["wp:term"][0][0].name;
 
