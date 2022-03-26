@@ -45,16 +45,63 @@ function showProduct(product) {
 
   // CHANE CONTENT
   copy.querySelector(".productName").textContent = product.title.rendered;
+
+  // product price 1
   copy.querySelector(".price").textContent = `$${product.price}`;
 
+  // product price 2
   if (product.price2 > 1) {
     copy.querySelector(
       ".price"
     ).textContent = `$${product.price} - $${product.price2}`;
   }
-
+  // brand name
   copy.querySelector(".brandName").textContent =
     product._embedded["wp:term"][0][0].name;
+  // image
+  copy
+    .querySelector("img")
+    .setAttribute(
+      "src",
+      product._embedded["wp:featuredmedia"][0].media_details.sizes.medium_large
+        .source_url
+    );
+
+  // stock
+  copy.querySelector(".stock").textContent = product.stock_amount;
+  if (product.stock_amount == 0) {
+    copy.querySelector(".stock").textContent = "No";
+  } else if (product.stock_amount == 3) {
+    copy.querySelector(".stock").textContent = "Yes";
+  }
+  // colour
+
+  if (product.id === 43) {
+    copy.querySelector(".black").classList.remove("hidden");
+    copy.querySelector(".white").classList.remove("hidden");
+  }
+  if (product.id === 27) {
+    copy.querySelector(".black").classList.remove("hidden");
+    copy.querySelector(".white").classList.remove("hidden");
+  }
+  if (product.id === 25) {
+    copy.querySelector(".turquoise").classList.remove("hidden");
+    copy.querySelector(".white").classList.remove("hidden");
+    copy.querySelector(".darkred").classList.remove("hidden");
+  }
+  if (product.id === 17) {
+    copy.querySelector(".black").classList.remove("hidden");
+    copy.querySelector(".white").classList.remove("hidden");
+    copy.querySelector(".red").classList.remove("hidden");
+    copy.querySelector(".blue").classList.remove("hidden");
+    copy.querySelector(".green").classList.remove("hidden");
+  }
+  if (product.id === 16) {
+    copy.querySelector(".na").classList.remove("hidden");
+  }
+  if (product.id === 11) {
+    copy.querySelector(".na").classList.remove("hidden");
+  }
 
   //   console.log(product._links);
 
