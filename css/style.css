@@ -177,4 +177,31 @@ nav a {
 /* COLOURS */
 .colours {
   content: "";
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+.colourDivs {
+  content: "";
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  padding: 0.1rem 0;
+}
+
+.colourDiv1,
+.colourDiv2,
+.colourDiv3,
+.colourDiv4,
+.colourDiv5 {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  justify-self: center;
+}
+
+.hidden {
+  visibility: hidden;
 }
