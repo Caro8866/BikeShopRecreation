@@ -8,7 +8,7 @@ function init(event) {
 
 async function getData() {
   let result = await fetch(
-    "http://carolinethostrup.dk/Theme09-Content/09.01.02_WP/wp-json/wp/v2/bike?_embed"
+    "https://carolinethostrup.dk/Theme09-Content/09.01.02_WP/wp-json/wp/v2/bike?_embed"
   );
   handleProductList(await result.json());
 }
