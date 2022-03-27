@@ -75,31 +75,42 @@ function showProduct(product) {
     copy.querySelector(".stock").textContent = "Yes";
   }
   // colour
-
+  // Dover 1 or 5
   if (product.id === 43) {
     copy.querySelector(".black").classList.remove("hidden");
     copy.querySelector(".white").classList.remove("hidden");
   }
-  if (product.id === 27) {
-    copy.querySelector(".black").classList.remove("hidden");
-    copy.querySelector(".white").classList.remove("hidden");
-  }
-  if (product.id === 25) {
-    copy.querySelector(".turquoise").classList.remove("hidden");
-    copy.querySelector(".white").classList.remove("hidden");
-    copy.querySelector(".darkred").classList.remove("hidden");
-  }
-  if (product.id === 17) {
+
+  // Dutchi 1
+  if (product.id === 42) {
     copy.querySelector(".black").classList.remove("hidden");
     copy.querySelector(".white").classList.remove("hidden");
     copy.querySelector(".red").classList.remove("hidden");
     copy.querySelector(".blue").classList.remove("hidden");
     copy.querySelector(".green").classList.remove("hidden");
   }
-  if (product.id === 16) {
+
+  // Mixte 3 or 8
+  if (product.id === 40) {
+    copy.querySelector(".turquoise").classList.remove("hidden");
+    copy.querySelector(".white").classList.remove("hidden");
+    copy.querySelector(".darkred").classList.remove("hidden");
+  }
+
+  //Dutchie 3 or 8
+  if (product.id === 38) {
+    copy.querySelector(".black").classList.remove("hidden");
+    copy.querySelector(".white").classList.remove("hidden");
+    copy.querySelector(".red").classList.remove("hidden");
+    copy.querySelector(".blue").classList.remove("hidden");
+    copy.querySelector(".green").classList.remove("hidden");
+  }
+  // Cardinal
+  if (product.id === 37) {
     copy.querySelector(".na").classList.remove("hidden");
   }
-  if (product.id === 11) {
+  // Warhawk
+  if (product.id === 36) {
     copy.querySelector(".na").classList.remove("hidden");
   }
 

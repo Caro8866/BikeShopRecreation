@@ -190,28 +190,40 @@ nav a {
   padding: 0.1rem 0;
 }
 
-.red,
-.blue,
 .black,
 .white,
-.green {
+.red,
+.blue,
+.green,
+.turquoise,
+.darkred {
   content: "";
   width: 15px;
   height: 15px;
   justify-self: center;
 }
 
+.black {
+  background-color: #000000;
+}
+.white {
+  background-color: #ffebcd;
+}
 .red {
   background-color: red;
 }
-
 .blue {
-  background-color: blue;
+  background-color: rgb(57, 130, 240);
 }
-
-.black {
-  background-color: black;
+.green {
+  background-color: #5e775e;
+}
+.turquoise {
+  background-color: #1ba7b1;
+}
+.darkred {
+  background-color: rgb(66, 18, 12);
 }
 .hidden {
-  visibility: hidden;
+  display: none;
 }
